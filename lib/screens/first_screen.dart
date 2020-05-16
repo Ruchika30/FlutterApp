@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'package:flutter/material.dart';
 
 
@@ -8,10 +9,18 @@ class FirstScreen extends StatelessWidget{
           color: Colors.red,
           child: Center(
               child: Text(
-            "Hello FLUTTER",
+          "You lucky munber is ${mathsLogic()}",
             textDirection: TextDirection.ltr,
           ),
         ),
       );
   }
+
+int mathsLogic(){
+  var value =  Random();
+  return value.nextInt(10);
 }
+
+
+}
+
