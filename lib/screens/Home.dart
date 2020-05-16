@@ -8,9 +8,18 @@ class Home extends StatelessWidget{
       child:Container(
       alignment: Alignment.center,
       color: Colors.yellow,
-      height:200.0,
-      width: 100.0,
-      child:Text("This is Home class", textDirection: TextDirection.ltr,)
+      // height:200.0,
+      // width: 100.0,
+      margin:EdgeInsets.only(left: 20.0, top:20.0),
+      child:Text("This is Home class", 
+      textDirection: TextDirection.ltr,
+      style: TextStyle(
+        color: Colors.red,
+        fontSize: 50.0,
+        fontWeight: FontWeight.w700
+      ),
+      
+      )
     )
     );
   }
