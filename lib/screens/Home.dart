@@ -11,8 +11,39 @@ class Home extends StatelessWidget{
       // height:200.0,
       // width: 100.0,
       margin:EdgeInsets.only(left: 20.0, top:20.0),
+      child: Column(children: <Widget>[
+       Row(
+        children: <Widget>[
+           Expanded(child: Text("You", 
+              textDirection: TextDirection.ltr,
+              style: TextStyle(
+              color: Colors.red,
+              fontSize: 50.0,
+              fontWeight: FontWeight.w700
+          ),
+          )),
+          Expanded(child: Text("Are", 
+              textDirection: TextDirection.ltr,
+              style: TextStyle(
+              color: Colors.red,
+              fontSize: 20.0,
+              fontWeight: FontWeight.w700
+          ),
+          )),
+          Expanded(child:Text("Aweosme", 
+              textDirection: TextDirection.ltr,
+              style: TextStyle(
+              color: Colors.red,
+              fontSize: 30.0,
+              fontWeight: FontWeight.w700
+          ),
+          )),
+          
+        ],
+      ),
 
-      child: Row(
+
+       Row(
         children: <Widget>[
            Expanded(child: Text("You", 
               textDirection: TextDirection.ltr,
@@ -41,6 +72,14 @@ class Home extends StatelessWidget{
           
         ],
       )
+
+
+
+
+      
+      ],)
+
+  
       
       
       
